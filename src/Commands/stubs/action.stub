@@ -1,0 +1,17 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Http\Request;
+use BrightComponents\Actions\Action;
+
+class DummyClass extends Action
+{
+    /**
+     * Execute the action.
+     */
+    public function DummyMethod()
+    {
+        //
+    }
+}
