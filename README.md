@@ -8,6 +8,9 @@
 
 ![Bright Components](https://s3.us-east-2.amazonaws.com/bright-components/bc_large.png "Bright Components")
 
+### Disclaimer
+The packages under the BrightComponents namespace are basically a way for me to avoid copy/pasting simple functionality that I like in all of my projects. There's nothing groundbreaking here, just a little extra functionality for form requests, controllers, custom rules, services, etc.
+
 Invokable actions are a clean, slim alternative to classic MVC controllers. The general idea is based on the "A" in [ADR - Action Domain Responder](http://paul-m-jones.com/archives/5970), by [Paul M. Jones](https://twitter.com/pmjones).
 
 For example, instead of a CommentController, with the usual methods like "Create", "Store", "Show", "Edit", etc, we'll create "actions" that have a single responsibility. Dependencies can be injected via the constructor, or on the action method itself. By default, we'll use the magic "__invoke" method, however, this can be customized:
@@ -105,6 +108,12 @@ To generate an PostIndex action, as in the example above, enter the following co
 php artisan make:action Posts\\PostIndex
 ```
 Place your logic inside the "__invoke" method (or the method name you chose in the configuration file).
+> Note: When utilizing the __invoke magic method for your action, you'll need to be sure the action class exists before definng the route, if not, you will receive an 'invalid route' exception. Routes for invokable classes can be defined as follows:
+```php
+Route::get('comments', App\Http\Actions\Comments\CommentIndex::class);
+// or import the class at the top of the file and use the short name.
+```
+> Also, if you're using the package default namespace for actions, you'll need to be sure that the namespace in your RouteServiceProvider has been updated or set to an emnpty string if you're using the fully qualified namespace of the action class.
 ```php
 public function __invoke(Request $request)
 {
