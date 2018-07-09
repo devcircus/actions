@@ -12,7 +12,7 @@ class ActionMakeCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'make:action';
+    protected $name = 'bright:action {name}';
 
     /**
      * The console command description.
@@ -59,7 +59,7 @@ class ActionMakeCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace.'\\'.Config::get('actions.namespace');
+        return $rootNamespace.'\\'.Config::get('actions.namespace', '');
     }
 
     /**
@@ -72,7 +72,11 @@ class ActionMakeCommand extends GeneratorCommand
         $input = $input = studly_case(trim($this->argument('name')));
         $suffix = Config::get('actions.suffix');
 
-        return str_finish($input, $suffix);
+        if (Config::get('actions.override_duplicate_suffix')) {
+            return str_finish($input, $suffix);
+        }
+
+        return $input.$suffix;
     }
 
     /**
