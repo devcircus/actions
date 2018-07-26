@@ -122,7 +122,7 @@ return [
 To begin using BrightComponents/Actions, simply follow the instructions above, then generate your Action classes as needed.
 To generate an PostIndex action, as in the example above, enter the following command into your terminal:
 ```bash
-php artisan bright:action Posts\\PostIndex
+php artisan adr:action Posts\\PostIndex
 ```
 
 Place your logic inside the "__invoke" method (or the method name you chose in the configuration file).
