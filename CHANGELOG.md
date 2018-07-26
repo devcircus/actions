@@ -13,3 +13,7 @@ All notable changes to BrightComponents/Actions will be documented in this file
 - Add code coverage via CodeClimate.
 - Add duplicate suffix configuration option.
 - Update command to use new configuration option.
+
+## 0.1.2 - 2018-07-26
+
+- Rename command namespace from "bright" to "adr" since the release of the "bright-components/adr" package that combines several bright-components packages.

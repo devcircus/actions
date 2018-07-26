@@ -12,7 +12,7 @@ class ActionMakeCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $signature = 'bright:action {name}';
+    protected $signature = 'adr:action {name}';
 
     /**
      * The console command description.
