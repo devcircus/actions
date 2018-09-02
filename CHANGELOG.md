@@ -17,3 +17,7 @@ All notable changes to BrightComponents/Actions will be documented in this file
 ## 0.1.2 - 2018-07-26
 
 - Rename command namespace from "bright" to "adr" since the release of the "bright-components/adr" package that combines several bright-components packages.
+
+## 1.0.0-beta.1 - 2018-09-02
+
+- First beta release. Features locked.
