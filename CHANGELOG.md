@@ -25,3 +25,7 @@ All notable changes to BrightComponents/Actions will be documented in this file
 ## 1.0.0-beta.1.1 - 2018-09-05
 
 -   Add laravel/framework dependency. Bump required PHP version to ^7.1.3.
+
+## 1.0.0-beta.1.2 - 2019-02-28
+
+-   Update for compatibility with Laravel 5.8
