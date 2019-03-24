@@ -1,7 +1,7 @@
 {
     "name": "bright-components/actions",
     "description": "Invokable actions. Not controllers.",
-    "version": "1.0.0-beta.1.2",
+    "version": "1.0.0",
     "keywords": [
         "bright-components",
         "actions",
