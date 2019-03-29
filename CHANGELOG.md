@@ -33,3 +33,8 @@ All notable changes to BrightComponents/Actions will be documented in this file
 ## 1.0.0 - 2019-03-23
 
 -   Initial stable release.
+
+## 2.0.0 - 2019-03-29
+
+-   Update to 2.0 to sync bright-components package versions.
+-   Update README.

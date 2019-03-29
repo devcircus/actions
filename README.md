@@ -1,10 +1,10 @@
 # Bright Components - Actions
 ### Invokable actions. Not controllers.
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/bright-components/actions.svg)](https://packagist.org/packages/bright-components/actions)
+[![Latest Stable Version](https://poser.pugx.org/bright-components/actions/v/stable)](https://packagist.org/packages/bright-components/actions)
 [![Build Status](https://img.shields.io/travis/bright-components/actions/master.svg)](https://travis-ci.org/bright-components/actions)
 [![Quality Score](https://img.shields.io/scrutinizer/g/bright-components/actions.svg)](https://scrutinizer-ci.com/g/bright-components/actions)
-[![Total Downloads](https://img.shields.io/packagist/dt/bright-components/actions.svg)](https://packagist.org/packages/bright-components/actions)
+[![Total Downloads](https://poser.pugx.org/bright-components/actions/downloads)](https://packagist.org/packages/bright-components/actions)
 
 ![Bright Components](https://s3.us-east-2.amazonaws.com/bright-components/bc_large.png "Bright Components")
 
